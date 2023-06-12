@@ -1,4 +1,4 @@
 # Simple Java Calculator
-A simple calculator coded in java.
+A simple console calculator coded in java.
 
 This is a fairly simple calculator that can multiply, divide, add, and subtract.
