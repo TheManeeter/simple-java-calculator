@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanman = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
+        Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
         System.out.println("Hello and welcome to the best calculator on the planet!");
         System.out.println("Plesse select one of the following operations:");
         System.out.println("1) Multiply");
         System.out.println("2) Division");
         System.out.println("3) Addition");
         System.out.println("4) Subtraction");
-        int operation = scanman.nextInt();
+        int operation = scanner.nextInt();
         System.out.println("Please enter your first number: ");
-        int FIRST_NUMBER = scanman.nextInt();
+        int FIRST_NUMBER = scanner.nextInt();
         System.out.println("Please enter your second number: ");
-        int SECOND_NUMBER = scanman.nextInt();
+        int SECOND_NUMBER = scanner.nextInt();
     int answer;
         if (operation == 1) { /* MULTIPLICATION */
            answer = FIRST_NUMBER*SECOND_NUMBER;
