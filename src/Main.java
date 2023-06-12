@@ -6,7 +6,7 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         Scanner scanman = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
         System.out.println("Hello and welcome to the best calculator on the planet!");
-        System.out.println("Please select one of the following operations:");
+        System.out.println("Plesse select one of the following operations:");
         System.out.println("1) Multiply");
         System.out.println("2) Division");
         System.out.println("3) Addition");
