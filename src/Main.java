@@ -31,5 +31,6 @@ public class Main {
             answer = FIRST_NUMBER-SECOND_NUMBER;
             System.out.println(FIRST_NUMBER+"-"+SECOND_NUMBER+"="+answer);
         }
+        System.out.println("Calculation Complete");
         }
     }
