@@ -14,22 +14,26 @@ public class Main {
         int FIRST_NUMBER = scanner.nextInt();
         System.out.println("Please enter your second number: ");
         int SECOND_NUMBER = scanner.nextInt();
+        boolean failedStatus = false;
         int answer;
         if (operation == 1) { /* MULTIPLICATION */
-           answer = FIRST_NUMBER*SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER+"*"+SECOND_NUMBER+"="+answer);
+            answer = FIRST_NUMBER * SECOND_NUMBER;
+            System.out.println(FIRST_NUMBER + "*" + SECOND_NUMBER + "=" + answer);
         } else if (operation == 2) { /* DIVISION */
-            answer = FIRST_NUMBER/SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER+"/"+SECOND_NUMBER+"="+answer);
+            answer = FIRST_NUMBER / SECOND_NUMBER;
+            System.out.println(FIRST_NUMBER + "/" + SECOND_NUMBER + "=" + answer);
         } else if (operation == 3) { /* ADDITION */
-            answer = FIRST_NUMBER+SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER+"+"+SECOND_NUMBER+"="+answer);
+            answer = FIRST_NUMBER + SECOND_NUMBER;
+            System.out.println(FIRST_NUMBER + "+" + SECOND_NUMBER + "=" + answer);
         } else if (operation == 4) { /* SUBTRACTION */
-            answer = FIRST_NUMBER-SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER+"-"+SECOND_NUMBER+"="+answer);
-        } else {
-            System.out.println("That is not a valid operation")
+            answer = FIRST_NUMBER - SECOND_NUMBER;
+            System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
+        } else { /* Checks if a valid operation was entered by the user */
+            failedStatus = true;
+            System.out.println("That is not a valid operation");
         }
-        System.out.println("Calculation Complete");
+        if (!failedStatus) {
+            System.out.println("Calculation Complete!");
         }
     }
+}
