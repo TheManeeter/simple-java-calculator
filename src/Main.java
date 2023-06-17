@@ -16,23 +16,29 @@ public class Main {
         int SECOND_NUMBER = scanner.nextInt();
         boolean failedStatus = false;
         int answer;
-        if (operation == 1) { /* MULTIPLICATION */
-            answer = FIRST_NUMBER * SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER + "*" + SECOND_NUMBER + "=" + answer);
-        } else if (operation == 2) { /* DIVISION */
-            answer = FIRST_NUMBER / SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER + "/" + SECOND_NUMBER + "=" + answer);
-        } else if (operation == 3) { /* ADDITION */
-            answer = FIRST_NUMBER + SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER + "+" + SECOND_NUMBER + "=" + answer);
-        } else if (operation == 4) { /* SUBTRACTION */
-            answer = FIRST_NUMBER - SECOND_NUMBER;
-            System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
-        } else { /* Checks if a valid operation was entered by the user */
-            failedStatus = true;
-            System.out.println("That is not a valid operation");
+        switch (operation) {
+            case 1 -> { // MULTIPLICATION
+                answer = FIRST_NUMBER * SECOND_NUMBER;
+                System.out.println(FIRST_NUMBER + "*" + SECOND_NUMBER + "=" + answer);
+            }
+            case 2 -> { // DIVISION
+                answer = FIRST_NUMBER / SECOND_NUMBER;
+                System.out.println(FIRST_NUMBER + "/" + SECOND_NUMBER + "=" + answer);
+            }
+            case 3 -> { // ADDITION
+                answer = FIRST_NUMBER + SECOND_NUMBER;
+                System.out.println(FIRST_NUMBER + "+" + SECOND_NUMBER + "=" + answer);
+            }
+            case 4 -> { // SUBTRACTION
+                answer = FIRST_NUMBER - SECOND_NUMBER;
+                System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
+            }
+            default -> { // Fail safe
+                failedStatus = true;
+                System.out.println("That is not a valid operation");
+            }
         }
-        if (!failedStatus) {
+        if (!failedStatus) { // Calculation successful checker/indicator
             System.out.println("Calculation Complete!");
         }
     }
