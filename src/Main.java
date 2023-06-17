@@ -38,7 +38,7 @@ public class Main {
                 System.out.println("That is not a valid operation");
             }
         }
-        if (!failedStatus) { // Calculation successful checker/indicator
+        if (!failedStatus) { // Checks if the code is successful or not
             System.out.println("Calculation Complete!");
         }
     }
