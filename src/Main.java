@@ -14,22 +14,21 @@ public class Main {
         int FIRST_NUMBER = scanner.nextInt();
         System.out.println("Please enter your second number: ");
         int SECOND_NUMBER = scanner.nextInt();
-    int answer;
+        int answer;
         if (operation == 1) { /* MULTIPLICATION */
            answer = FIRST_NUMBER*SECOND_NUMBER;
             System.out.println(FIRST_NUMBER+"*"+SECOND_NUMBER+"="+answer);
-        }
-        if (operation == 2) { /* DIVISION */
+        } else if (operation == 2) { /* DIVISION */
             answer = FIRST_NUMBER/SECOND_NUMBER;
             System.out.println(FIRST_NUMBER+"/"+SECOND_NUMBER+"="+answer);
-        }
-        if (operation == 3) { /* ADDITION */
+        } else if (operation == 3) { /* ADDITION */
             answer = FIRST_NUMBER+SECOND_NUMBER;
             System.out.println(FIRST_NUMBER+"+"+SECOND_NUMBER+"="+answer);
-        }
-        if (operation == 4) { /* SUBTRACTION */
+        } else if (operation == 4) { /* SUBTRACTION */
             answer = FIRST_NUMBER-SECOND_NUMBER;
             System.out.println(FIRST_NUMBER+"-"+SECOND_NUMBER+"="+answer);
+        } else {
+            System.out.println("That is not a valid operation")
         }
         System.out.println("Calculation Complete");
         }
