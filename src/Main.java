@@ -35,7 +35,7 @@ public class Main {
             }
             default -> { // Fail safe
                 failedStatus = true;
-                System.out.println("That is not a valid operation");
+                System.out.println("You did not select a valid operation!");
             }
         }
         if (!failedStatus) { // Checks if the code is successful or not
