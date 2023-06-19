@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        double buildVersion = 1.2;
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
-        System.out.println("Welcome to the best calculator on the planet!");
+        System.out.println("Welcome to the best calculator on the planet! (Build: "+buildVersion+")");
         System.out.println("Please select one of the following operations:");
         System.out.println("1) Multiply");
         System.out.println("2) Division");
