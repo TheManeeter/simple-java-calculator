@@ -36,7 +36,7 @@ public class Main {
                 answer = FIRST_NUMBER - SECOND_NUMBER;
                 System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
             }
-            default -> { // Fail safe
+            default -> { // Fail Safe
                 failedStatus = true;
                 System.out.println("You did not select a valid operation!");
             }
