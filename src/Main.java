@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
         System.out.println("Welcome to the best calculator on the planet! (Build: "+buildVersion+")");
         System.out.println("Please select one of the following operations:");
-        System.out.println("1) Multiply");
+        System.out.println("1) Multiplication");
         System.out.println("2) Division");
         System.out.println("3) Addition");
         System.out.println("4) Subtraction");
