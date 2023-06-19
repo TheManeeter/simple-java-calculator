@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double majorMinorVersion = 1.2; // This is the major and the minor version
-        int microVersion = 1; // This is the .1 after the major and the minor version
+        double majorMinorVersion = 1.2; // This is the major and the minor version (first 2 numbers in the build version)
+        int microVersion = 1; // This is the .1 after the major and the minor version (the last number with the build version)
         String buildVersion = majorMinorVersion+"."+microVersion;
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
         System.out.println("Welcome to the best calculator on the planet! (Build: "+buildVersion+")");
