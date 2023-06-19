@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double buildVersion = 1.2;
+        double majorMinorVersion = 1.2; // This is the major and the minor version
+        int microVersion = 1; // This is the .1 after the major and the minor version
+        String buildVersion = majorMinorVersion+"."+microVersion;
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
         System.out.println("Welcome to the best calculator on the planet! (Build: "+buildVersion+")");
         System.out.println("Please select one of the following operations:");
