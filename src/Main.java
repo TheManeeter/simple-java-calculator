@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
-        System.out.println("Hello and welcome to the best calculator on the planet!");
+        System.out.println("Welcome to the best calculator on the planet!");
         System.out.println("Please select one of the following operations:");
         System.out.println("1) Multiply");
         System.out.println("2) Division");
