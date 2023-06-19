@@ -36,12 +36,12 @@ public class Main {
                 answer = FIRST_NUMBER - SECOND_NUMBER;
                 System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
             }
-            default -> { // Fail Safe
+            default -> { // FAIL SAFE
                 failedStatus = true;
                 System.out.println("You did not select a valid operation!");
             }
         }
-        if (!failedStatus) { // Checks if the code is successful or not
+        if (!failedStatus) { // Checks if the calculation was successful or not
             System.out.println("Calculation Complete!");
         }
     }
