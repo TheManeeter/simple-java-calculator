@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         double majorMinorVersion = 1.2; // This is the major and the minor version (first 2 numbers in the build version)
@@ -14,27 +13,27 @@ public class Main {
         System.out.println("4) Subtraction");
         int operation = scanner.nextInt();
         System.out.println("Please enter your first number: ");
-        int FIRST_NUMBER = scanner.nextInt();
+        int firstNumber = scanner.nextInt();
         System.out.println("Please enter your second number: ");
-        int SECOND_NUMBER = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
         boolean failedStatus = false;
         int answer;
         switch (operation) {
             case 1 -> { // MULTIPLICATION
-                answer = FIRST_NUMBER * SECOND_NUMBER;
-                System.out.println(FIRST_NUMBER + "*" + SECOND_NUMBER + "=" + answer);
+                answer = firstNumber * secondNumber;
+                System.out.println(firstNumber + "*" + secondNumber + "=" + answer);
             }
             case 2 -> { // DIVISION
-                answer = FIRST_NUMBER / SECOND_NUMBER;
-                System.out.println(FIRST_NUMBER + "/" + SECOND_NUMBER + "=" + answer);
+                answer = firstNumber / secondNumber;
+                System.out.println(firstNumber + "/" + secondNumber + "=" + answer);
             }
             case 3 -> { // ADDITION
-                answer = FIRST_NUMBER + SECOND_NUMBER;
-                System.out.println(FIRST_NUMBER + "+" + SECOND_NUMBER + "=" + answer);
+                answer = firstNumber + secondNumber;
+                System.out.println(firstNumber + "+" + secondNumber + "=" + answer);
             }
             case 4 -> { // SUBTRACTION
-                answer = FIRST_NUMBER - SECOND_NUMBER;
-                System.out.println(FIRST_NUMBER + "-" + SECOND_NUMBER + "=" + answer);
+                answer = firstNumber - secondNumber;
+                System.out.println(firstNumber + "-" + secondNumber + "=" + answer);
             }
             default -> { // FAIL SAFE
                 failedStatus = true;
