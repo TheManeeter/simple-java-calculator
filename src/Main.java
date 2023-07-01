@@ -5,7 +5,7 @@ public class Main {
         int microVersion = 1; // This is the .1 after the major and the minor version (the last number with the build version)
         String buildVersion = majorMinorVersion+"."+microVersion;
         Scanner scanner = new Scanner(System.in); /* The Scanner Class allows the program to read input from the user */
-        System.out.println("Welcome to the best calculator on the planet! (Build: "+buildVersion+")");
+        System.out.println("Welcome  to the best calculator on the planet! (Build: "+buildVersion+")");
         System.out.println("Please select one of the following operations:");
         System.out.println("1) Multiplication");
         System.out.println("2) Division");
