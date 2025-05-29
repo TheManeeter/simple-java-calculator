@@ -42,6 +42,6 @@ public class Main {
         }
         if (!failedStatus) { // Checks if the calculation was successful or not
             System.out.println("Calculation Complete!");
-        }
+        } // Test
     }
 }
