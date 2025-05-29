@@ -44,4 +44,4 @@ public class Main {
             System.out.println("Calculation Complete!");
         } // Test
     }
-} // Test
+} // Tester
